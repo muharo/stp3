@@ -1,0 +1,18 @@
+[
+	{
+		"caption": "Sort",
+		"children":
+		[
+			{
+				"command" : "sort_by_length",
+				"args" : {"reverse" : false},
+				"caption" : "Sort by length"
+			},
+			{
+				"command" : "sort_by_length",
+				"args" : {"reverse" : true},
+				"caption" : "Sort by length (reverse)"
+			}
+		]
+	}
+]
