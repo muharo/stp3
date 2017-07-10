@@ -10,3 +10,5 @@ To use a plugin, use the ST console (Win/Lin: **< Ctrl + \` >**):
 
 
 To easily run these commands, they can be added to Context menu (on right click), by adding **Context.sublime-menu** file under *Packages/User* directory.
+
+The commands may also be added to main menu, by adding **Main.sublime-menu** file under *Packages/User* directory.
