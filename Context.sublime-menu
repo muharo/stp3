@@ -14,5 +14,19 @@
 				"caption" : "Sort by length (reverse)"
 			}
 		]
+	},
+	{
+		"caption": "Json",
+		"children":
+		[
+			{
+				"command" : "one_line",
+				"caption" : "One line json"
+			},
+			{
+				"command" : "json_pretty",
+				"caption" : "Pretty json"
+			}
+		]
 	}
 ]

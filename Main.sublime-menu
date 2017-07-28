@@ -6,18 +6,38 @@
 		"children":
 		[
 			{
-				"caption": "Sort",
-				"children":
+				"caption": "STP3",
+				"children": 
 				[
 					{
-						"command" : "sort_by_length",
-						"args" : {"reverse" : false},
-						"caption" : "Sort by length"
+						"caption": "Sort",
+						"children":
+						[
+							{
+								"command" : "sort_by_length",
+								"args" : {"reverse" : false},
+								"caption" : "Sort by length"
+							},
+							{
+								"command" : "sort_by_length",
+								"args" : {"reverse" : true},
+								"caption" : "Sort by length (reverse)"
+							}
+						]
 					},
 					{
-						"command" : "sort_by_length",
-						"args" : {"reverse" : true},
-						"caption" : "Sort by length (reverse)"
+						"caption": "Json",
+						"children":
+						[
+							{
+								"command" : "one_line",
+								"caption" : "One line json"
+							},
+							{
+								"command" : "json_pretty",
+								"caption" : "Pretty json"
+							}
+						]
 					}
 				]
 			}

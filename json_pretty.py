@@ -2,7 +2,7 @@ import sublime
 import sublime_plugin
 import json
 
-class JsonFormatCommand(sublime_plugin.TextCommand):
+class JsonPrettyCommand(sublime_plugin.TextCommand):
 	def run(self, edit, **args):
 		view = self.view
 		mysel = self.view.sel()
