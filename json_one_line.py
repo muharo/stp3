@@ -1,7 +1,7 @@
 import sublime
 import sublime_plugin
 
-class OneLineCommand(sublime_plugin.TextCommand):
+class JsonOneLineCommand(sublime_plugin.TextCommand):
 	def run(self, edit, **args):
 		view = self.view
 		mysel = self.view.sel()
@@ -12,4 +12,4 @@ class OneLineCommand(sublime_plugin.TextCommand):
 			selected_text = ' '.join(selected_text.split())
 
 			# Replace selected lines with the sorted ones
-			self.view.replace(edit,region,selected_text)
+			view.replace(edit,region,selected_text)

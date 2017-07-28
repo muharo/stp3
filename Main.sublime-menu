@@ -30,7 +30,7 @@
 						"children":
 						[
 							{
-								"command" : "one_line",
+								"command" : "json_one_line",
 								"caption" : "One line json"
 							},
 							{
