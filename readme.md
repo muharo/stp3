@@ -12,3 +12,8 @@ To use a plugin, use the ST console (Win/Lin: **< Ctrl + \` >**):
 To easily run these commands, they can be added to Context menu (on right click), by adding **Context.sublime-menu** file under *Packages/User* directory.
 
 The commands may also be added to main menu, by adding **Main.sublime-menu** file under *Packages/User* directory.
+
+List of available plugins:
+ * sort_by_length - sort selected lines by length (ascending and descending)
+ * json_one_line - format selected text to a one line text
+ * json_pretty - format selected text to a pretty json
