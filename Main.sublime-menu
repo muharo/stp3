@@ -38,6 +38,27 @@
 								"caption" : "Pretty json"
 							}
 						]
+					},
+					{
+						"caption": "Encode",
+						"children":
+						[
+							{
+								"command" : "encode",
+								"args" : {"enc_alg" : "sha256"},
+								"caption" : "SHA256"
+							},
+							{
+								"command" : "encode",
+								"args" : {"enc_alg" : "sha512"},
+								"caption" : "SHA512"
+							},
+							{
+								"command" : "encode",
+								"args" : {"reverse" : "base64"},
+								"caption" : "BASE64"
+							}
+						]
 					}
 				]
 			}

@@ -17,3 +17,4 @@ List of available plugins:
  * sort_by_length - sort selected lines by length (ascending and descending)
  * json_one_line - format selected text to a one line text
  * json_pretty - format selected text to a pretty json
+ * encode - encode a string to one of the supported types: sha256, sha512, base64
