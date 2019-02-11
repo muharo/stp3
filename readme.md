@@ -1,6 +1,7 @@
 ### Sublime Text 3 Plugins
 
 The plugins are defined as python files. To enable and use a plugin, copy the corresponding file under *Packages/User* directory.
+MacOS location is: ```~/Library/Application Support/Sublime Text 3/Packages/User```
 
 To use a plugin, use the ST console (Win/Lin: **< Ctrl + \` >**):
 
