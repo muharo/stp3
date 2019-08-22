@@ -1,15 +1,16 @@
 import sublime
 import sublime_plugin
 
+
 class JsonOneLineCommand(sublime_plugin.TextCommand):
-	def run(self, edit, **args):
-		view = self.view
-		mysel = self.view.sel()
-		for region in mysel:
+    def run(self, edit, **args):
+        view = self.view
+        my_selection = self.view.sel()
+        for region in my_selection:
 
-			selected_text = view.substr(region)
-			selected_text = selected_text.replace('\n', '').replace('\r', '')
-			selected_text = ''.join(selected_text.split())
+            selected_text = view.substr(region)
+            selected_text = selected_text.replace('\n', '').replace('\r', '')
+            selected_text = ''.join(selected_text.split())
 
-			# Replace selected lines with the sorted ones
-			view.replace(edit,region,selected_text)
+            # Replace selected lines with the sorted ones
+            view.replace(edit,region,selected_text)
