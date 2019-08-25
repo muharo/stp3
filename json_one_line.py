@@ -1,5 +1,6 @@
 import sublime
 import sublime_plugin
+import json
 
 
 class JsonOneLineCommand(sublime_plugin.TextCommand):
@@ -9,8 +10,8 @@ class JsonOneLineCommand(sublime_plugin.TextCommand):
         for region in my_selection:
 
             selected_text = view.substr(region)
-            selected_text = selected_text.replace('\n', '').replace('\r', '')
-            selected_text = ''.join(selected_text.split())
+            json_object = json.loads(selected_text)
+            selected_text = json.dumps(json_object, separators=(',', ':'))
 
             # Replace selected lines with the sorted ones
-            view.replace(edit,region,selected_text)
+            view.replace(edit, region, selected_text)
